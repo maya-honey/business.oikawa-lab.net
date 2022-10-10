@@ -8,7 +8,7 @@
           <?php
           $args = array(
           'post_type' => 'post',
-          'category_name' => 'cat-interview','cat-twitter',
+          
           'posts_per_page' => 6,
           'orderby' => 'date',
           'order' => 'DESC',
