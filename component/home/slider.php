@@ -9,7 +9,7 @@
           $paged = get_query_var('paged') ? get_query_var('paged') : 1;
           $args = array(
           'post_type' => 'post',
-          'category_name' => 'cat-interview',
+          'category_name' => 'slider',
           'posts_per_page' => 9,
           'orderby' => 'modified',
           'order' => 'ASC',
