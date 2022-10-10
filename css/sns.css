@@ -1,0 +1,9 @@
+.sns_wrapper{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.sns_common>a>img{
+    width:30px;
+}

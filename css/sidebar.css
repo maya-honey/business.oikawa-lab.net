@@ -98,6 +98,10 @@
   border-right: solid 15px #981918;
 }
 
+.side-profile-frame{
+  margin:0 0 15px 0;
+}
+
 @media screen and (max-width: 1300px) {
   .sidebar{
     width:35%;
