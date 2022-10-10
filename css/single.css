@@ -1,0 +1,346 @@
+
+
+/*header-shadow-----start*/
+.header-shadow{
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+/*header-shadow-----end*/
+
+.contents{
+  margin:150px auto 0 auto;
+	position:relative;
+}
+
+/*bread-----start*/
+.bread{
+	width:780px;
+	background:rgba(172, 172, 172, 0.1);
+	padding:5px 10px;
+	border-radius: 10px;
+	position: absolute;
+	left:0;
+	top:-35px;
+}
+.bread ul {
+	display:flex;
+}
+.bread ul li{
+	margin: 0 20px 0 0;
+	position:relative;
+}
+.bread ul li::before{
+	content:">";
+	font-size:12px;
+	position: absolute;
+	top:50%;
+	right:-15px;
+	-webkit-transform:translateY(-50%);
+	   -moz-transform:translateY(-50%);
+		  -ms-transform:translateY(-50%);
+		   -o-transform:translateY(-50%);
+		      transform:translateY(-50%);
+}
+.bread ul li:last-child::before{
+	content:"";
+
+}
+.bread ul li span{
+	font-size:12px;
+	font-weight:bold;
+}
+.bread ul li a{
+	font-size:12px;
+	font-weight:bold;
+}
+.bread ul li a:hover{
+	color:#cf0200;
+}
+.bread ul li a:last-child:hover{
+	color:#cf0200;
+}
+
+/*bread-----end*/
+
+/*single.php-------------------*/
+.article-content {
+  margin-bottom: 2rem;
+}
+
+.article-content .article-info {
+  margin-bottom: .5rem;
+}
+
+.article-content .cat-data a {
+  font-size: .8rem;
+  margin-right: .5rem;
+  padding: .1rem .5rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #cf0200;
+}
+.article-content a{
+  color:#004BB1;
+}
+
+.article-content .article-info .article-date,
+.article-content .article-info .article-author {
+  font-size: .8rem;
+  display: inline-block;
+  margin-right: .5rem;
+  color: #888;
+}
+
+.article-content .article-info .article-author i {
+  margin-right: .3rem;
+}
+
+.article-content p,
+.article-content b,
+.article-content table,
+.article-content ul,
+.article-content ol {
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+.article-content p,
+.article-content img,
+.article-content table,
+.article-content ul,
+.article-content ol {
+  margin-bottom: 3px;
+}
+
+.article-content h1 {
+  font-size: 34px;
+  margin:40px 0 20px 0;
+  letter-spacing: 1px;
+	font-weight:normal;
+	line-height:133%;
+  font-family:"Noto Sans JP Bold";
+}
+
+.article-content h2 {
+  font-size: 25px;
+  margin: 3rem 0 2rem;
+  padding:15px 15px;
+  letter-spacing: 1px;
+	border-left: solid 7px #cf0200;
+	color:black;
+	/*#f29f05#f2cb05#5dcdc0#5c9acc*/
+	font-family:"Noto Sans JP Bold";
+  line-height:150%;
+}
+
+.article-content h3 {
+  font-size: 22px;
+  line-height:150%;
+  margin: 2.5rem 0 1.8rem;
+  padding: 0 1rem;
+  letter-spacing: 1px;
+  border-left: solid 5px #cf0200;
+  background: transparent;
+  font-family:"Noto Sans JP Bold";
+}
+
+.article-content h4 {
+  font-size:18px;
+  margin: 2rem 0 1rem;
+  letter-spacing: 1px;
+  font-family:"Noto Sans JP Bold";
+}
+
+.article-content h5 {
+  font-size: 16px;
+  margin: 0 0 .3rem;
+  letter-spacing: 1px;
+	font-family:"Noto Sans JP Bold";
+}
+
+.article-content .article-img {
+  margin-bottom: 2rem;
+}
+
+.article-content img {
+  display: block;
+  width:auto;
+  height:auto;
+  max-width:100%;
+  border:2px solid #000;
+}
+
+.article-content ul, .article-content ol{
+  margin-left: 0px;
+  box-sizing:border-box;
+	width:100%;
+	padding:15px 15px 15px 45px;
+}
+
+.article-content ul, .article-content ol{
+  list-style: disc;
+}
+
+.article-content ol{
+  list-style: decimal;
+}
+
+.article-content ul li, .article-content ol li{
+	margin-bottom:5px;
+}
+
+.article-content table {
+  border-collapse: collapse;
+}
+
+.article-content th,
+.article-content td {
+  padding: .6rem;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+
+.article-content figure {
+  max-width: 100%;
+}
+
+.article-tag {
+  text-align: right;
+}
+
+.article-tag ul {
+  font-size: 0;
+  margin-bottom: 0;
+}
+
+.article-tag ul li {
+  font-size: .9rem;
+  display: inline-block;
+  margin-right: .5rem;
+  vertical-align: middle;
+}
+
+.article-tag ul li:last-child {
+  margin-right: 0;
+}
+
+.article-tag ul li a {
+  padding: .2rem .5rem;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.article-tag ul li a:hover {
+  color:#cf0200;
+	border: 1px solid #cf0200;
+}
+
+/*記事内装飾*/
+.article-section{
+	width:100%;
+	height:1px;
+	border-bottom:1px dashed #000;
+}
+
+.article-trouble-div{
+	background:#f3f3f3;
+	border:1px dashed #000;
+	padding:15px;
+	line-height:180%;
+}
+
+.article-trouble-ul{
+	background:#f3f3f3;
+  margin-top:10px;
+	border:1px dashed #000;
+}
+
+.article-trouble-title{
+	font-weight:bold;
+	font-size:18px;
+	margin-left:5px;
+	background: linear-gradient(transparent 60%,#f8e81c 0);
+}
+
+.article-attention-max{
+	font-weight:bold;
+	background: linear-gradient(transparent 60%,#f8e81c 0);
+}
+
+
+/*レスポンシブ*/
+@media screen and (max-width:800px){
+  .bread{
+  	width:calc(100% - 20px);
+  	background:rgba(172, 172, 172, 0.1);
+  	padding:5px 10px;
+  	border-radius: 10px;
+  	position: absolute;
+  	left:0;
+  	top:-35px;
+  }
+
+  .article-content h1 {
+    font-size: 30px;
+    margin:40px 0 20px 0;
+    letter-spacing: 1px;
+  	font-weight:normal;
+  	line-height:133%;
+    font-family:"Noto Sans JP Bold";
+  }
+
+  .article-content h2 {
+    font-size: 25px;
+    margin: 3rem 0 2rem;
+    padding:15px 15px;
+    letter-spacing: 1px;
+  	border-left: solid 7px #cf0200;
+  	color:black;
+  	/*#f29f05#f2cb05#5dcdc0#5c9acc*/
+  	font-family:"Noto Sans JP Bold";
+    line-height:150%;
+  }
+
+  .article-content h3 {
+    font-size: 22px;
+    line-height:150%;
+    margin: 2.5rem 0 1.8rem;
+    padding: 0 1rem;
+    letter-spacing: 1px;
+    border-left: solid 5px #cf0200;
+    background: transparent;
+  	font-family:"Noto Sans JP Bold";
+  }
+
+  .article-content h4 {
+    font-size:18px;
+    margin: 2rem 0 1rem;
+    letter-spacing: 1px;
+  	font-family:"Noto Sans JP Bold";
+  }
+
+  .article-content h5 {
+    font-size: 16px;
+    margin: 0 0 .3rem;
+    letter-spacing: 1px;
+  	font-family:"Noto Sans JP Bold";
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+	.bread{
+		top:-65px;
+	}
+}
+
+@media(max-width: 600px) {
+
+	.article-content p{
+		font-size:17px;
+	}
+}
+
+/*----------------------------*/

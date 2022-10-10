@@ -1,0 +1,157 @@
+.slides {
+  position: relative;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#slider-area {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.slides-inner {
+  position: relative;
+  top: 0;
+  width: 50%;
+
+  margin:0 50px 0 0;
+}
+
+.slidekiji {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.slidekiji a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 350px;
+}
+
+.slidekiji img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slidekiji .text {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 30px 15px;
+  background: linear-gradient(top, rgba(255, 255, 255, 0) 2%, #000 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 2%, #000 100%);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 2%, #000 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 2%, #000 100%);
+  text-shadow: 0 0 3px #000;
+  -moz-text-shadow: 0 0 3px #000;
+  -webkit-text-shadow: 0 0 3px #000;
+}
+
+.slidekiji .kiji-date {
+  font-size: .9em;
+  color: #fff;
+}
+
+.slidekiji .cat-data {
+  font-size: .9em;
+  color: #fff;
+  background-color: transparent;
+}
+
+.slidekiji h2 {
+  font-size: 1.5em;
+  line-height: 1.4;
+  margin: 0;
+  color: #fff;
+}
+
+#pager {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#pager .prev, #pager .next {
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  width: 44px;
+  height: 40px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #333;
+}
+
+#pager .prev {
+  left: 0;
+}
+
+#pager .next {
+  right: 0;
+}
+
+.slides-nav {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.slides-nav a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.slides-nav a.active {
+  cursor: default;
+  background: #333;
+}
+
+@media (max-width: 799px) {
+  .slides {
+    height: 240px;
+  }
+  .slidekiji a {
+    height: 240px;
+  }
+  .slidekiji h2 {
+    font-size: 1.2em;
+  }
+  .slidekiji .cat-data, .slidekiji .kiji-date {
+    font-size: .8em;
+  }
+  #pager .prev, #pager .next {
+    line-height: 8vw;
+    width: 8vw;
+    height: 8vw;
+  }
+  .slides-nav a {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+}

@@ -1,0 +1,110 @@
+/*footer-content-----start*/
+.footer-content{
+	width:100%;
+}
+.footer-c-frame{
+	width:1200px;
+	margin:0 auto;
+	padding:0 0 40px 0;
+}
+.footer-c-f-top{
+	width:100%;
+	padding:20px 0;
+	border-bottom:3px solid #cf0200;
+}
+.footer-nav .menu{
+	width:100%;
+	display:flex;
+}
+.footer-nav .menu li{
+	padding:0 20px;
+	border-left: 1px solid #cf0200;
+}
+.footer-nav .menu li:first-child{
+	padding-left:0px;
+	border:none;
+}
+.footer-nav .menu li a{
+	font-size:13px;
+	font-weight:bold;
+}
+
+.footer-c-f-bottom{
+	width:100%;
+	padding:20px 0;
+	position: relative;
+}
+.footer-c-f-bottom ul{
+	display:flex;
+	flex-wrap:wrap;
+}
+.footer-c-f-b-u-li1{
+	width:15%;
+}
+.footer-c-f-b-u-li1 img{
+	display: block;
+	width:120px;
+	height: auto;
+}
+.footer-c-f-b-u-li2{
+	width:85%;
+}
+.footer-c-f-b-u-li2 p{
+	font-size:13px;
+	font-weight:bold;
+	line-height: 180%;
+}
+.footer-c-f-bottom::before{
+	content: "ⒸOikawa lab All rights reserved.";
+	font-size:11px;
+	font-weight:bold;
+	color:rgba(252, 2, 0,0.5);
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+
+@media screen and (max-width: 1300px) {
+	.footer-c-frame{
+		width:95%;
+	}
+	.footer-c-f-b-u-li1{
+		width:20%;
+	}
+	.footer-c-f-b-u-li2{
+		width:80%;
+	}
+}
+@media screen and (max-width: 700px) {
+	.footer-c-frame{
+		width:92%;
+	}
+	.footer-nav .menu{
+		display:flex;
+		flex-wrap:wrap;
+		width:100%;
+		margin:0 auto;
+	}
+	.footer-nav .menu li{
+		margin:15px 0 0 0;
+    padding:0 10px;
+		text-align:center;
+
+	}
+	.footer-c-f-b-u-li1{
+		width:100%;
+		margin:0 0 15px 0;
+	}
+	.footer-c-f-b-u-li1 img{
+		display: block;
+		margin:0 auto;
+	}
+	.footer-c-f-b-u-li2{
+		width:100%;
+	}
+	.footer-c-f-b-u-li2 p{
+		font-weight:weight;
+	}
+}
+
+/*footer-content-----end*/
